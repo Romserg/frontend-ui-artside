@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 				errorHTMLRootDir: "w3c",
 				errorTemplate: "w3c_validation_error_Template.html",
 				failHard: true,
-				relaxerror: [] //ignores these errors 
+				relaxerror: [] //ignores these errors
 			},
 			files: {
 				src: [SRC_DIR + '/**/*.html']
@@ -95,7 +95,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-w3c-html-validation');
 	grunt.loadNpmTasks('grunt-browser-sync');
 
-	grunt.registerTask('live', ['watch']);
+	grunt.registerTask('csscode', ['csslint:main']);
+	grunt.registerTask('htmlcode', ['htmlhint:main']);
+	grunt.registerTask('htmlvalidate', ['validation']);
 	grunt.registerTask('start', ['browserSync', 'watch']);
-	grunt.registerTask('test', ['htmlhint:main', 'validation', 'csslint:main']);
-};
+}
