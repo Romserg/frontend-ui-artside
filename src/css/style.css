@@ -1,0 +1,226 @@
+@font-face {
+	font-family: 'DINCyr';
+	font-weight: normal;
+	font-style: normal;
+	src: local('DINCyr'),
+		local('DINCyr-Regular'),
+		url(./fonts/dincyr-regular.wott),
+		url(./fonts/dincyr-regular.ttf),
+		url(./fonts/dincyr-regular.otf);
+}
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+  font-size: 11px;
+  color: #363636;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-body.jpg) repeat 0 0;
+}
+
+
+/* Common
+-----------------------------------------------------------------------------*/
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+h1,
+h2 {
+  margin: 0 0 18px;
+  font-family: DINCyr, Verdana, Arial, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: underline;
+  color: #707070;
+}
+
+article {
+}
+
+article p {
+  margin: 0 0 1em;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	position: relative;
+  height: 200px;
+}
+
+.header .logo {
+	position: absolute;
+	left: 0;
+	top: 44px;
+}
+
+.header .logo img {
+	display: block;
+	width: 101px;
+	height: auto;
+}
+
+.header .phone-number {
+	position: absolute;
+	right: 0;
+	top: 44px;
+	font-size: 30px;
+	line-height: 26px;
+	color: #707070;
+	text-decoration: none;
+	font-family: DINCyr, Verdana, Arial, Tahoma, sans-serif;
+}
+
+.header .phone-code {
+	display: block;
+	font-size: 18px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+  width: 100%;
+  padding: 0 0 150px;
+  position: relative;
+}
+
+.middle:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.container {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.content {
+  padding: 0 0 0 270px;
+}
+
+
+/* Teams
+-----------------------------------------------------------------------------*/
+.teams {
+  font-size: 0;
+}
+
+.teams .team {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 11px;
+  width: 210px;
+  margin-right: 50px;
+}
+
+.teams .team:last-child {
+  margin-right: 0;
+}
+
+.teams .members {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teams .member {
+  position: relative;
+  display: block;
+  padding-left: 90px;
+  min-height: 78px;
+  margin-bottom: 18px;
+  word-wrap: break-word;
+}
+
+.teams .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
+  height: 78px;
+  overflow: hidden;
+  background: #363636;
+}
+
+.teams .image img {
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+  float: left;
+  width: 250px;
+  margin-left: -100%;
+  position: relative;
+}
+
+/* Menu
+-----------------------------------------------------------------------------*/
+
+.mainmenu {
+	font-family: DINCyr, Verdana, Arial, Tahoma, sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	color: #363636;	
+	text-transform: uppercase;
+}
+
+.mainmenu .menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mainmenu .menu-item {
+	display: block;
+	line-height: 42px;
+}
+
+.mainmenu .menu-item a {
+	text-decoration: none;
+	color: inherit;	
+}
+
+.mainmenu .menu-item a:hover {
+	background: #707070;
+	color: #fff;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+  box-sizing: border-box;
+  width: 1000px;
+  margin: -100px auto 0;
+  height: 100px;
+  position: relative;
+  padding: 40px 0 0;
+  color: #707070;
+  border-top: 1px solid rgba(112, 112, 112, 0.47);
+}
+
+.footer .copyright {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
